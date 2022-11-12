@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;700&family=Open+Sans:wght@400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    padding: 0 15px;
+    margin: 0 auto;
+}
+body {
+    background-color: #f6f6f6;
+    font-family: 'Poppins', sans-serif;
+}
+.header {
+    margin-top: 20px;
+}
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 100px;
+}
+.header .logo {
+    color: #333;
+    font-weight: 600;
+    font-size: 30px;
+    transition: .3s;
+    cursor: pointer;
+}
+.header .menu ul {
+    display: flex;
+    list-style: none;
+}
+.header ul li a {
+    color: #333;
+    margin-right: 30px;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: .3s;
+}
+.header ul li a:hover,
+.header .logo:hover {
+    color:#fd9704;
+}
+
+.landing {
+    padding-top: 120px;
+}
+.landing .content {
+    display: flex;
+    margin-right: 20px;
+}
+.landing .text {
+    margin: 0 auto;
+}
+.landing .text h1 {
+    color:#1a0b46;
+    font-weight: 600;
+    font-size: 100px;
+}
+.landing .text h3 {
+    color: #fd9704;
+    font-size: 60px;
+    font-weight: 600;
+    margin-top: -55px;
+}
+.landing .text p {
+    color: #a0aeb6;
+    line-height: 1.8;
+    font-size: 16px;
+}
+.landing .text .btn {
+    background-color: #fd9704;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    border-radius: 20px;
+    padding: 10px 28px;
+    margin-top: 40px;
+    text-align: center;
+    color: #fff;
+    transition: .4s;
+    cursor: pointer;
+}
+.landing .text .btn:hover {
+    background-color: #e68b0c;
+    color: #fff;
+}
+.landing .image {
+    width: 700px;
+    /* height: 450px; */
+}
+.landing .image img {
+    width: 100%;
+    height: 100%;
+}
+
+/* Responsive Section */
+@media (max-width: 767px) {
+    .header .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 20px;
+    }
+    .header .logo {
+        margin-bottom: 16px;
+        font-size: 40px;
+    }
+    .header ul li a {
+        font-size: 16px;
+    }
+    .landing {
+        padding-top: 60px;
+    }
+    .landing .text {
+        text-align: center;
+    }
+    .landing .text h1 {
+        font-size: 80px;
+    }
+    .landing .text h3 {
+        font-size: 40px;
+        margin-top: -45px;
+    }
+    .landing .text p {
+        margin: 20px 0 0;
+        line-height: 2;
+    }
+    .landing .image {
+        display: none;
+    }
+}
